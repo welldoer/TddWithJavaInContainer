@@ -3,6 +3,9 @@ package net.blogjava.welldoer.demo;
 public class FiberCalculator {
 
     public static long calculate(int index) {
+        if (index < 1) {
+            throw new IllegalArgumentException();
+        }
         if (index == 1 || index == 2) {
             return 1;
         }
@@ -15,7 +18,7 @@ public class FiberCalculator {
             second += first;
             first = temp;
         }
-        
+
         return second;
     }
 
