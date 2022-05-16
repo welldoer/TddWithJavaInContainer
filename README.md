@@ -23,3 +23,5 @@
 2. 关闭 vscode 当前工作区，再重新打开，此时 vscode 会自动识别并提示安装"Extension Pack for Java"；
 3. 待安装完成后，会进一步自动识别 Java 工程，包括准备内置的 gradle 环境，在 JAVA PROJECTS 视图中可以查看各类信息；
 4. 可右击提供的测试代码来验证整体环境的就绪；
+
+参考项目：[TDD实战@计算斐波那契数](https://www.bilibili.com/video/BV18s411K7Kr)
