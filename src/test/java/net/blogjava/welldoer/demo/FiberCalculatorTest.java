@@ -16,4 +16,8 @@ public class FiberCalculatorTest {
         assertThat(FiberCalculator.calculate(10)).isEqualTo(55);
     }
 
+    @Test
+    void should_return_12586269025L_given_50() {
+        assertThat(FiberCalculator.calculate(50)).isEqualTo(12586269025L);
+    }
 }
