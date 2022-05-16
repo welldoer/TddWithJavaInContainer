@@ -6,7 +6,17 @@ public class FiberCalculator {
         if (index == 1 || index == 2) {
             return 1;
         }
-        return calculate(index - 2) + calculate(index - 1);
+
+        long first = 1;
+        long second = 1;
+        long temp;
+        for(int i = 3; i <= index; i++) {
+            temp = second;
+            second += first;
+            first = temp;
+        }
+        
+        return second;
     }
 
 }
