@@ -10,4 +10,10 @@ public class FiberCalculatorTest {
         assertThat(FiberCalculator.calculate(1)).isEqualTo(1);
         assertThat(FiberCalculator.calculate(2)).isEqualTo(1);
     }
+
+    @Test
+    void should_return_correct_number_given_between_3_or_50() {
+        assertThat(FiberCalculator.calculate(10)).isEqualTo(55);
+    }
+
 }
