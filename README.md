@@ -17,3 +17,9 @@
 2. 若选择 alpine，也可以手动安装软件，可能还需要在用户 .bashrc、.zshrc 中增加环境变量：
 3.   export JAVA_HOME="/usr/lib/jvm/java-11-openjdk"
 4.   export PATH="${PATH}:${JAVA_HOME}/bin"
+
+初始化 SpringBoot 开发项目环境说明：
+1. 执行 curl.sh 下载 SpringBoot 初始代码集；
+2. 关闭 vscode 当前工作区，再重新打开，此时 vscode 会自动识别并提示安装"Extension Pack for Java"；
+3. 待安装完成后，会进一步自动识别 Java 工程，包括准备内置的 gradle 环境，在 JAVA PROJECTS 视图中可以查看各类信息；
+4. 可右击提供的测试代码来验证整体环境的就绪；
