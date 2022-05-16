@@ -6,4 +6,4 @@ FROM mcr.microsoft.com/vscode/devcontainers/base:0-alpine-${VARIANT}
 
 # ** [Optional] Uncomment this section to install additional packages. **
 RUN sudo apk update \
-    && apk sudo add --no-cache openjdk11
+    && sudo apk add --no-cache openjdk11
